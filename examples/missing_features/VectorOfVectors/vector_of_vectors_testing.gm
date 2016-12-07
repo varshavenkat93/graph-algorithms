@@ -1,0 +1,6 @@
+procedure vector_of_vectors_testing() {
+
+	vect < vect <int> >[3] v1 ;
+	
+	
+}
