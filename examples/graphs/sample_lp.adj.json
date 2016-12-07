@@ -1,0 +1,9 @@
+{
+  "uri": "sample_lp.adj", 
+  "format": "adj_list",
+  "node_props": [{ 
+    "name": "id", 
+    "type": "integer" 
+  }],
+  "separator": " "
+}

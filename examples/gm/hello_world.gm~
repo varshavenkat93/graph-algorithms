@@ -1,0 +1,15 @@
+/*
+* Copyright (C) 2013 - 2015 Oracle and/or its affiliates. All rights reserved.
+*/
+local hello():int{
+	println("Test");
+	return 2;
+}
+
+procedure hello_world():int {
+	println("Hello World");
+	int i = hello();
+	return i+1;
+}
+
+

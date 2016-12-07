@@ -1,0 +1,50 @@
+procedure node_property_vector(G:graph, log_n : int, maxIter : int, K : int ; bit_mask : nodeProp<vect<int>[log_n]>, bit_string : nodeProp<vect<int>[log_n]> , radius : nodeProp<int>   ): int {
+
+	
+	
+	//N_P <vect<int>[log_n]>(G) bit_string;  	
+	//N_P <vect<int>[log_n]>(G) bit_string_prev;
+	vect<int>[log_n] bit_string_copy = 0 ;
+	vect<int>[log_n] bit_mask_copy = 0 ;
+	//int j =0;
+	int cnt = 0;
+	
+	foreach(i : G.nodes) {
+	i.bit_string = i.bit_mask;
+	
+	
+ 	bit_string_copy = i.bit_string;
+ 	bit_mask_copy = i.bit_mask;
+ 	//bit_string_copy[63] = 1;
+ 	
+ 	i.bit_string = bit_string_copy;
+ 	
+ 	/*
+ 	if(i.bit_string != i. bit_mask){
+ 		cnt += 1;
+ 	}
+ 	*/
+ 	bool x = (bit_string_copy[63] == 1) || (bit_mask_copy[63] == 1);
+					if(x) {
+						cnt += 1;
+						}
+					else {
+						cnt += 0;	
+					}
+ 
+ 	/*
+ 	j = 0;
+ 	while (j < log_n){
+ 		if(j % 2 == 0){
+ 			bit_string_copy[j] = 1;
+ 		}
+ 	i.bit_mask = bit_string_copy;
+ 	
+ 	}
+ 	*/
+ 	}
+ 	
+ 	
+ 	return cnt;
+	
+}

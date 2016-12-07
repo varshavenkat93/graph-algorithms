@@ -1,0 +1,46 @@
+{
+    "uri": "connections.adj",
+    "format": "adj_list",
+    "vertex_id_type": "integer",
+    "vertex_props":[{
+        "name": "type",
+        "type": "string"
+    }, {
+        "name": "religion",
+        "type": "string"
+    }, {
+        "name": "company",
+        "type": "string"
+    }, {
+        "name": "music genre",
+        "type": "string"
+    }, {
+        "name": "show",
+        "type": "string"
+    }, {
+        "name": "name",
+        "type": "string"
+    }, {
+        "name": "country",
+        "type": "string"
+    }, {
+        "name": "team",
+        "type": "string"
+    }, {
+        "name": "genre",
+        "type": "string"
+    }, {
+        "name": "occupation",
+        "type": "string"
+    }, {
+        "name": "role",
+        "type": "string"
+    }],
+    "edge_props":[{
+        "name": "label",
+        "type": "string"
+    }, {
+        "name": "weight",
+        "type": "float"
+    }]
+}

@@ -1,0 +1,12 @@
+procedure map_value_as_vector(): int {
+	map < int , vect > map1 ; 
+	
+	vect < double >[3] v1 ;
+	
+	v1 [2] = 0.73;
+	
+	
+	map1 [5] = v1; 
+	return 1;
+	//double  = map1 [5]; 
+}

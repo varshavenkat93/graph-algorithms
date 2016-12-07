@@ -1,0 +1,7 @@
+procedure approximate_diameter(G:graph, length : int, bitstring : nodeProp<vect<int>[length]>): int {
+	for (x: G.nodes) {
+	
+		vect<int>[length] test = x.bitstring;
+		}
+	return 1;
+	}

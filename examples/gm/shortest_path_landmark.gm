@@ -1,0 +1,32 @@
+procedure bellman_ford_backward(G:graph, len: E_P<double>, root: node; 
+                       dist: N_P<double>, prev: N_P<node>, prev_edge: N_P<edge>)
+{
+    N_P<bool> updated;
+    N_P<bool> updated_nxt;
+    N_P<double>  dist_nxt;
+    bool fin = false;
+
+    G.dist = (_ == root) ? 0.0 : +INF;
+    G.updated = (_ == root) ? true: false;
+    G.dist_nxt = _.dist;
+    G.updated_nxt = _.updated;
+    G.prev = NIL;
+    G.prev_edge = NIL;
+
+    while(!fin) {
+        fin = true;
+
+        foreach(n: G.nodes)(n.updated) {
+            foreach(s: n.inNbrs) {
+                edge(G) e = s.toEdge(); // the edge to s
+                // updated_nxt becomes true only if dist_nxt is actually updated
+                <s.dist_nxt; s.updated_nxt, s.prev, s.prev_edge> min= <n.dist + e.len; true, n, e>;
+            }
+        }
+
+        G.dist = _.dist_nxt;
+        G.updated = _.updated_nxt;
+        G.updated_nxt = false;
+        fin = ! exist(n: G.nodes){n.updated};
+    }
+}

@@ -1,0 +1,6 @@
+procedure vector_checks() {
+
+	vect < bool >[3] v1 ;
+	v1[1] = true;
+	
+}

@@ -1,0 +1,16 @@
+procedure avg_teen_cnt(G: graph, landmarks: N_P<vect<int>[10]>, k: int ): int
+{
+  //G.landmarks = 1;
+  int i = 1;
+  int max_val = 0;
+  foreach(n: G.nodes) {
+    n.landmarks[1] = n.landmarks[1] +1 ;
+    if (n.landmarks[1] > max_val){
+    	max_val = n.landmarks[1];
+    }
+  }
+
+  
+  return max_val;
+}
+

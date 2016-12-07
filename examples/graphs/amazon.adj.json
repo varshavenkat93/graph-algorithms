@@ -1,0 +1,9 @@
+{
+  "uri": "amazon_directed.edge", 
+  "format": "edge_list",
+  "separator": " ",
+  "node_props":[{
+        "name":"nodeID",
+        "type":"integer"
+    }]
+}

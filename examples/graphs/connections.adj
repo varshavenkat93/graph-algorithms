@@ -1,0 +1,78 @@
+1	 ""	 "Christianity"	 ""	 ""	 ""	 "Barack%20Obama"	 "United%20States"	 ""	 ""	 "44th%20president%20of%20United%20States%20of%20America"	 "political%20authority"	 2	 "collaborates"	 1.0	 3	 "collaborates"	 1.0	 4	 "admires"	 1.0	 5	 "admires"	 1.0	 6	 "admires"	 1.0	 7	 "admires"	 1.0	 8	 "feuds"	 1000.0	 9	 "feuds"	 1000.0	 10	 "feuds"	 1000.0	 11	 "collaborates"	 1.0	 15	 "admires"	 1.0	 19	 "collaborates"	 1.0	 20	 "collaborates"	 1.0	 21	 "collaborates"	 1.0	 22	 "collaborates"	 1.0	 23	 "collaborates"	 1.0	 24	 "feuds"	 1000.0	 25	 "feuds"	 1000.0	 26	 "collaborates"	 1.0	 28	 "collaborates"	 1.0
+2	 ""	 ""	 ""	 ""	 ""	 "Beyonce"	 "United%20States"	 ""	 ""	 ""	 "singer%20actress"	 1	 "collaborates"	 1.0	 35	 "admires"	 1.0	 36	 "collaborates"	 1.0	 37	 "feuds"	 1000.0
+3	 ""	 ""	 ""	 ""	 "Charlie%20Rose"	 "Charlie%20Rose"	 "United%20States"	 ""	 ""	 ""	 "talk%20show%20host%20journalist"	 1	 "collaborates"	 1.0	 45	 "collaborates"	 1.0	 52	 "collaborates"	 1.0	 55	 "collaborates"	 1.0
+4	 ""	 ""	 ""	 ""	 ""	 "Janet%20Yellen"	 "United%20States"	 ""	 ""	 ""	 "american%20economist"
+5	 ""	 "Catholicism"	 ""	 ""	 ""	 "Pope%20Francis"	 "Italy"	 ""	 ""	 "pope"	 "Catholic%20religion%20authority"	 56	 "collaborates"	 1.0	 57	 "collaborates"	 1.0	 58	 "collaborates"	 1.0	 59	 "leads"	 1.0
+6	 ""	 ""	 ""	 ""	 "Key%20and%20Peele"	 "Jordan%20Peele"	 "United%20States"	 ""	 ""	 ""	 "american%20comedian%20actor"	 1	 "admires"	 1.0	 7	 "collaborates"	 1.0
+7	 ""	 ""	 ""	 ""	 "Mad%20TV"	 "Keegan-Michael%20Key"	 "United%20States"	 ""	 ""	 ""	 "american%20comedian%20actor"	 1	 "admires"	 1.0	 6	 "collaborates"	 1.0
+8	 ""	 ""	 "Koch%20Industries"	 ""	 ""	 "David%20Koch"	 "United%20States"	 ""	 ""	 "executive%20vice%20president"	 "american%20business%20man"	 1	 "feuds"	 1000.0	 9	 "collaborates"	 1.0
+9	 ""	 ""	 "Koch%20Industries"	 ""	 ""	 "Charles%20Koch"	 "United%20States"	 ""	 ""	 "chief%20executive%20officer"	 "american%20business%20man"	 1	 "feuds"	 1000.0	 8	 "collaborates"	 1.0
+10	 ""	 ""	 ""	 ""	 ""	 "Rand%20Paul"	 ""	 ""	 ""	 "junior%20United%20States%20senator%20for%20Kentucky"	 "political%20authority"	 1	 "feuds"	 1000.0	 11	 "collaborates"	 1.0
+11	 ""	 ""	 ""	 ""	 ""	 "Eric%20Holder"	 "United%20States"	 ""	 ""	 "United%20States%20Deputy%20Attorney%20General"	 "political%20authority"	 1	 "collaborates"	 1.0	 10	 "collaborates"	 1.0
+12	 "Food%20assistance%20branch%20of%20United%20Nations"	 ""	 ""	 ""	 ""	 "World%20Food%20Programme"	 "Italy"	 ""	 ""	 ""	 ""	 1	 "admires"	 1.0	 14	 "collaborates"	 1.0
+13	 ""	 ""	 ""	 ""	 ""	 "Ertharin%20Cousin"	 "United%20States"	 ""	 ""	 "United%20States%20Ambassador%20to%20the%20United%20Nations%20agencies%20for%20Food%20and%20Agriculture"	 "political%20authority"	 12	 "leads"	 1.0
+14	 ""	 "Islam"	 "Dangote%20Group"	 ""	 ""	 "Aliko%20Dangote"	 ""	 ""	 ""	 ""	 "business%20magnate"	 12	 "collaborates"	 1.0
+15	 "TV%20show%20series"	 ""	 ""	 ""	 ""	 "House%20of%20Cards"	 "United%20States"	 ""	 "political%20drama"	 ""	 ""	 16	 "collaborates"	 1.0	 17	 "collaborates"	 1.0
+16	 "Internet%20video%20rental%20and%20streaming"	 ""	 ""	 ""	 ""	 "Netflix"	 "United%20States"	 ""	 ""	 ""	 ""	 15	 "collaborates"	 1.0	 18	 "collaborates"	 1.0
+17	 ""	 ""	 ""	 ""	 ""	 "Robin%20Wright"	 "United%20States"	 ""	 ""	 ""	 "actress"	 15	 "collaborates"	 1.0
+18	 ""	 ""	 ""	 ""	 "Orange%20is%20the%20new%20black"	 "Jenji%20Kohan"	 "United%20States"	 ""	 ""	 ""	 "writer%20producer%20director"	 16	 "collaborates"	 1.0
+19	 ""	 "Methodism"	 ""	 ""	 ""	 "Kirsten%20Gillibrand"	 "United%20States"	 ""	 ""	 "junior%20United%20States%20Senator%20from%20New%20York"	 "political%20authority"	 1	 "collaborates"	 1.0	 15	 "admires"	 1.0	 21	 "admires"	 1.0	 31	 "admires"	 1.0
+20	 ""	 ""	 "Farallon%20Capital%20Management"	 ""	 ""	 "Tom%20Steyer"	 "United%20States"	 ""	 ""	 "founder"	 "philantropist"	 1	 "collaborates"	 1.0	 21	 "collaborates"	 1.0
+21	 ""	 "Methodism"	 ""	 ""	 ""	 "Hillary%20Clinton"	 "United%20States"	 ""	 ""	 "67th%20United%20States%20Secretary%20of%20State"	 "political%20authority"	 1	 "collaborates"	 1.0	 20	 "collaborates"	 1.0	 23	 "admires"	 1.0	 29	 "admires"	 1.0
+22	 ""	 "Catholicism"	 ""	 ""	 ""	 "John%20Kerry"	 "United%20States"	 ""	 ""	 "68th%20United%20States%20Secretary%20of%20State"	 "political%20authority"	 1	 "collaborates"	 1.0	 23	 "collaborates"	 1.0	 24	 "feuds"	 1000.0	 25	 "feuds"	 1000.0	 32	 "feuds"	 1000.0
+23	 ""	 ""	 ""	 ""	 ""	 "Angela%20Merkel"	 "Germany"	 ""	 ""	 "chancellor"	 "political%20authority"	 1	 "collaborates"	 1.0	 21	 "admires"	 1.0	 22	 "collaborates"	 1.0	 25	 "feuds"	 1000.0
+24	 ""	 "buddhism"	 ""	 ""	 ""	 "Edward%20Snowden"	 "United%20States"	 ""	 ""	 "system%20administrator"	 "political%20authority"	 1	 "feuds"	 1000.0	 22	 "feuds"	 1000.0	 25	 "collaborates"	 1.0
+25	 ""	 ""	 ""	 ""	 ""	 "Vladimir%20Putin"	 "Russia"	 ""	 ""	 "president%20of%20Russia"	 "political%20authority"	 1	 "feuds"	 1000.0	 22	 "feuds"	 1000.0	 23	 "feuds"	 1000.0	 24	 "collaborates"	 1.0	 33	 "admires"	 1.0
+26	 ""	 "shintoism/zen%20buddhism"	 ""	 ""	 ""	 "Shinzo%20Abe"	 "Japan"	 ""	 ""	 "57th%20prime%20minister%20of%20Japan"	 "political%20authority"	 1	 "collaborates"	 1.0	 27	 "feuds"	 1000.0
+27	 ""	 ""	 ""	 ""	 ""	 "Xi%20Jinping"	 "China"	 ""	 ""	 "president%20of%20the%20People's%20Republic%20of%20China"	 "political%20authority"	 26	 "feuds"	 1000.0
+28	 ""	 "twelver%20shia%20islam"	 ""	 ""	 ""	 "Hassan%20Rouhani"	 "Iran"	 ""	 ""	 "7th%20president%20of%20Iran"	 "political%20authority"	 1	 "collaborates"	 1.0
+29	 ""	 ""	 "General%20Motors"	 ""	 ""	 "Mary%20Barra"	 "United%20States"	 ""	 ""	 "chief%20executive%20officer"	 "business%20woman"
+30	 ""	 "roman%20catholicism"	 ""	 ""	 ""	 "Jerry%20Brown"	 "United%20States"	 ""	 ""	 "34th%20and%2039th%20governorn%20of%20California"	 "political%20authority"	 21	 "admires"	 1.0
+31	 ""	 ""	 ""	 ""	 ""	 "Jason%20Collins"	 "United%20States"	 "Brooklyn%20nets"	 ""	 "basketball%20center%20player"	 "professional%20basketball%20player"
+32	 ""	 "atheism"	 ""	 ""	 ""	 "Kim%20Jong%20Un"	 "North%20Korea"	 ""	 ""	 "Supreme%20leader%20of%20North%20Korea"	 "political%20authority"	 22	 "feuds"	 1000.0
+33	 ""	 "sunni%20islam"	 ""	 ""	 ""	 "Abdel%20Fattah%20eL-Sisi"	 "Egypt"	 ""	 ""	 "6th%20president%20of%20Egypt"	 "political%20authority"	 34	 "feuds"	 1000.0
+34	 ""	 "sunni%20islam"	 ""	 ""	 ""	 "Abdullah%20Gul"	 "Turkey"	 ""	 ""	 "11th%20president%20of%20Turkey"	 "political%20authority"	 33	 "feuds"	 1000.0
+35	 ""	 "sunni%20islam"	 ""	 ""	 ""	 "Serena%20Williams"	 "United%20States"	 ""	 ""	 "11th%20president%20of%20Turkey"	 "professional%20tennis%20player"
+36	 ""	 ""	 ""	 ""	 ""	 "Pharrell%20Williams"	 "United%20States"	 ""	 ""	 "singer-songwriter"	 ""	 2	 "collaborates"	 1.0	 38	 "collaborates"	 1.0
+37	 "online%20retailing"	 ""	 ""	 ""	 ""	 "Amazon"	 "United%20States"	 ""	 ""	 ""	 ""	 2	 "feuds"	 1000.0	 65	 "feuds"	 1000.0	 66	 "feuds"	 1000.0	 67	 "feuds"	 1000.0
+38	 ""	 ""	 ""	 ""	 ""	 "Miley%20Cyrus"	 "United%20States"	 ""	 ""	 "singer-songwriter"	 ""	 2	 "admires"	 1.0	 36	 "collaborates"	 1.0
+39	 ""	 ""	 ""	 ""	 ""	 "Kerry%20Washington"	 "United%20States"	 ""	 ""	 "actress"	 ""	 36	 "admires"	 1.0	 40	 "collaborates"	 1.0
+40	 "broadcast%20television%20network"	 ""	 ""	 ""	 ""	 "ABC"	 "United%20States"	 ""	 ""	 ""	 ""	 39	 "collaborates"	 1.0	 42	 "feuds"	 1000.0	 45	 "feuds"	 1000.0
+41	 ""	 ""	 ""	 ""	 ""	 "Carrie%20Underwood"	 "United%20States"	 ""	 ""	 "singer-songwriter"	 ""	 42	 "collaborates"	 1.0
+42	 "broadcast%20television%20network"	 ""	 ""	 ""	 ""	 "NBC"	 "United%20States"	 ""	 ""	 ""	 ""	 40	 "feuds"	 1000.0	 41	 "collaborates"	 1.0	 43	 "collaborates"	 1.0	 44	 "collaborates"	 1.0	 45	 "feuds"	 1000.0
+43	 ""	 ""	 ""	 ""	 ""	 "Alfonso%20Cuaron"	 "Mexico"	 ""	 ""	 "film%20director"	 ""	 42	 "collaborates"	 1.0
+44	 ""	 ""	 ""	 ""	 ""	 "Seth%20Meyers"	 "United%20States"	 ""	 ""	 "actor"	 ""	 42	 "collaborates"	 1.0
+45	 "broadcast%20television%20network"	 ""	 ""	 ""	 ""	 "CBS"	 "United%20States"	 ""	 ""	 ""	 ""	 3	 "collaborates"	 1.0	 40	 "feuds"	 1000.0	 42	 "feuds"	 1000.0
+46	 "annual%20award%20ceremony%20for%20the%20achievements%20in%20film%20industry"	 ""	 ""	 ""	 ""	 "The%20Academy"	 "United%20States"	 ""	 ""	 ""	 ""	 43	 "admires"	 1.0	 47	 "admires"	 1.0	 48	 "admires"	 1.0	 49	 "admires"	 1.0	 50	 "admires"	 1.0	 52	 "admires"	 1.0
+47	 ""	 ""	 ""	 ""	 ""	 "Matthew%20McConaughey"	 "United%20States"	 ""	 ""	 "actor"	 ""
+48	 ""	 ""	 ""	 ""	 ""	 "Robert%20Lopez"	 "United%20States"	 ""	 ""	 "songwriter"	 ""	 49	 "collaborates"	 1.0
+49	 ""	 ""	 ""	 ""	 ""	 "Kristen%20Anderson-Lopez"	 "United%20States"	 ""	 ""	 "actress%20songwriter"	 ""	 48	 "collaborates"	 1.0
+50	 ""	 ""	 ""	 ""	 ""	 "Amy%20Adams"	 "United%20States"	 ""	 ""	 "actress%20singer"	 ""	 51	 "collaborates"	 1.0
+51	 ""	 ""	 ""	 ""	 ""	 "Megan%20Ellison"	 "United%20States"	 ""	 ""	 "film%20producer"	 ""	 50	 "collaborates"	 1.0
+52	 ""	 ""	 ""	 ""	 ""	 "Steve%20McQueen"	 "United%20States"	 ""	 ""	 "actor"	 ""	 3	 "collaborates"	 1.0	 53	 "collaborates"	 1.0
+53	 ""	 ""	 ""	 ""	 ""	 "Benedict%20Cumberbatch"	 "United%20Kingdom"	 ""	 ""	 "actor%20film%20producer"	 ""	 52	 "collaborates"	 1.0
+54	 ""	 ""	 ""	 ""	 ""	 "John%20Green"	 "United%20States"	 ""	 ""	 "adult%20fiction%20author"	 ""	 53	 "admires"	 1.0
+55	 ""	 ""	 ""	 ""	 ""	 "H.R.%20McMaster"	 "United%20States"	 ""	 ""	 "soldier"	 ""	 3	 "collaborates"	 1.0
+56	 ""	 ""	 ""	 ""	 ""	 "Omar%20Kobine%20Layama"	 ""	 ""	 ""	 ""	 ""	 5	 "collaborates"	 1.0	 57	 "collaborates"	 1.0	 58	 "collaborates"	 1.0
+57	 ""	 ""	 ""	 ""	 ""	 "Dieudonne%20Nzapalainga"	 ""	 ""	 ""	 ""	 ""	 5	 "collaborates"	 1.0	 56	 "collaborates"	 1.0	 58	 "collaborates"	 1.0
+58	 ""	 ""	 ""	 ""	 ""	 "Nicolas%20Guerekoyame%20Gbangou"	 ""	 ""	 ""	 ""	 ""	 5	 "collaborates"	 1.0	 56	 "collaborates"	 1.0	 57	 "collaborates"	 1.0
+59	 "state"	 "Catholicism"	 ""	 ""	 ""	 "The%20Vatican"	 "Rome"	 ""	 ""	 ""	 ""	 60	 "collaborates"	 1.0
+60	 ""	 ""	 ""	 ""	 ""	 "Nicolas%20Maduro"	 "Venezuela"	 ""	 ""	 ""	 "political%20authority"	 59	 "collaborates"	 1.0	 61	 "feuds"	 1000.0
+61	 ""	 ""	 ""	 ""	 ""	 "Michelle%20Bachelet"	 "Chile"	 ""	 ""	 "President%20of%20Chile"	 "political%20authority"	 60	 "feuds"	 1000.0
+62	 ""	 ""	 ""	 ""	 ""	 "Jose%20Mujica"	 "Uruguay"	 ""	 ""	 "President%20of%20Uruguay"	 "political%20authority"	 5	 "admires"	 1.0
+63	 ""	 ""	 ""	 ""	 ""	 "Cristiano%20Ronaldo"	 "Portugal"	 ""	 ""	 "Professional%20footballer"	 ""	 5	 "admires"	 1.0
+64	 ""	 ""	 ""	 ""	 ""	 "Jeff%20Bezos"	 "United%20States"	 ""	 ""	 "business%20man"	 ""	 37	 "leads"	 1.0
+65	 "e-commerce%20company"	 ""	 ""	 ""	 ""	 "Alibaba"	 "China"	 ""	 ""	 ""	 ""	 37	 "feuds"	 1000.0	 69	 "feuds"	 1000.0
+66	 "e-commerce%20company"	 ""	 ""	 ""	 ""	 "eBay"	 "United%20States"	 ""	 ""	 ""	 ""	 37	 "feuds"	 1000.0	 70	 "feuds"	 1000.0
+67	 "internet-related%20services%20products"	 ""	 ""	 ""	 ""	 "Google"	 "United%20States"	 ""	 ""	 ""	 ""	 37	 "feuds"	 1000.0	 72	 "feuds"	 1000.0	 73	 "leads"	 1.0
+68	 ""	 ""	 ""	 ""	 ""	 "Jack%20Ma"	 "China"	 ""	 ""	 "business%20man"	 ""	 65	 "leads"	 1000.0
+69	 "mass%20media"	 ""	 ""	 ""	 ""	 "Tencent"	 "China"	 ""	 ""	 ""	 ""	 65	 "feuds"	 1000.0
+70	 ""	 ""	 ""	 ""	 ""	 "Carl%20Icahn"	 "United%20States"	 ""	 ""	 "business%20man"	 ""	 66	 "feuds"	 1000.0
+71	 ""	 ""	 ""	 ""	 ""	 "Pony%20Ma"	 "China"	 ""	 ""	 "business%20man"	 ""	 69	 "leads"	 1.0
+72	 "online%20social%20network%20service"	 ""	 ""	 ""	 ""	 "Facebook"	 "United%20States"	 ""	 ""	 ""	 ""	 67	 "feuds"	 1000.0	 74	 "feuds"	 1000.0
+73	 "home%20automation%20company"	 ""	 ""	 ""	 ""	 "Nest"	 "United%20States"	 ""	 ""	 ""	 ""
+74	 "photo%20messaging%20application"	 ""	 ""	 ""	 ""	 "Snapchat"	 "United%20States"	 ""	 ""	 ""	 ""
+75	 ""	 ""	 ""	 ""	 ""	 "Bobby%20Murphy"	 "United%20States"	 ""	 ""	 "cofounder%20of%20snapchat"	 ""	 74	 "leads"	 1.0	 76	 "collaborates"	 1.0
+76	 ""	 ""	 ""	 ""	 ""	 "Evan%20Spiegel"	 "United%20States"	 ""	 ""	 "cofounder%20of%20snapchat"	 ""	 74	 "leads"	 1.0	 75	 "collaborates"	 1.0
+77	 ""	 ""	 ""	 ""	 ""	 "Tony%20Fadell"	 "United%20States"	 ""	 ""	 "CEO%20of%20Nest"	 ""	 73	 "leads"	 1.0	 78	 "collaborates"	 1.0
+78	 ""	 ""	 ""	 ""	 ""	 "Hosain%20Rahman"	 "United%20States"	 ""	 ""	 "CEO%20of%20Jawbone"	 ""	 77	 "collaborates"	 1.0
