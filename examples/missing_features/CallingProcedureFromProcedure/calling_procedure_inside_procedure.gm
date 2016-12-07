@@ -1,0 +1,14 @@
+/**
+ * This GreenMarl code is used to test calling a procedure from another procedure
+ */
+
+procedure calling_procedure_inside_procedure(): int {
+	int ret = hello_world();
+	return ret;
+}
+
+procedure hello_world(): int{
+
+	println("Hello World");
+	return 1;
+}
