@@ -1,0 +1,9 @@
+/**
+ * This GreenMarl code is used to test vector of bools
+ */
+
+procedure vector_of_bools() {
+	vect < bool >[3] v1 ;
+	v1[1] = true;
+}
+
