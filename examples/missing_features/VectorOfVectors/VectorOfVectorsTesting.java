@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2013 - 2015 Oracle and/or its affiliates. All rights reserved.
+ * This Java program is used to call vector_of_vectors_testing GreenMarl code.
  */
 
 
