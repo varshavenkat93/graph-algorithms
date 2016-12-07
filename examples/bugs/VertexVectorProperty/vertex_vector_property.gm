@@ -1,0 +1,14 @@
+/**
+ * This Green-Marl program is used to check if Vertex Vector Property can be accessed using indexing
+ */
+procedure vertex_vector_property(G:graph, length : int, bitstring : nodeProp<vect<int>[length]>): int {
+	for (x: G.nodes) {
+	
+		x.bitstring[2] = 0;
+		
+		// workaround is to copy the vector property to a temporary variable
+		
+		//vect<int>[length] test = x.bitstring;
+		}
+	return 1;
+	}
