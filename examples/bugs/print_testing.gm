@@ -1,0 +1,10 @@
+/*
+* This program is to test print functionality of greenmarl. 
+Current version of PGX 1.2.1 does not support print in Remote mode.
+*/
+procedure print_testing():int {
+	println("Hello World");
+	return 1;
+	
+}
+
