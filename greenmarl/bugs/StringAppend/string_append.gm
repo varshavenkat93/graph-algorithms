@@ -1,0 +1,14 @@
+procedure negative_indexing():string{
+
+	string s1 = "Hello";
+	string s2 = "World";
+	string s = "";
+	s = s1 + s2
+	
+	int c1 = 0;
+	int c2 = 18;
+	s += c1 + ";" + c2;
+	
+	return s;
+}
+
