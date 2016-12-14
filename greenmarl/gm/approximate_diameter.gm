@@ -1,89 +1,93 @@
-procedure approximate_diameter(G:graph, log_n : int, maxIter : int, K : int ; bit_mask : nodeProp<vect<int>[log_n]>, bit_string : nodeProp<vect<int>[log_n]> , neighbourhood : nodeProp<vect<int>[maxIter]> , radius : nodeProp<int> ): int {
+procedure approximate_diameter(G:graph, len : int, maxIter : int, K : int ; bit_mask : nodeProp<vect<int>[len]>, bit_string : nodeProp<vect<int>[len]> , neighbourhood : nodeProp<vect<double>[maxIter]> , radius : nodeProp<int> ): int {
 
-	
-	
-	//N_P <vect<int>[log_n]>(G) bit_string;  	
-	N_P <vect<int>[log_n]>(G) bit_string_prev;
-	//N_P <vect<int>[maxIter]>(G) neighbourhood;
-	
-	vect<int>[maxIter] total_neighbourhood = 0;
-	
+	N_P <vect<int>[len]>(G) bit_string_prev;
+	vect<double>[maxIter] total_neighbourhood = 0;
 	int h_max = 0;
 	int h = 0;
-	
-	
 	int approximate_diameter = 0;
-	
+	int bit_position = 0;
+	float my_rand = 0;
+	int RAND_MAX = 32767;
+	float termination_criteria = 0.0001;
 	foreach(i : G.nodes) {
-	i.bit_string = i.bit_mask;
-	i.bit_string_prev = i.bit_mask;
+		vect<int>[len] bit_string_copy = 0;
+		my_rand = (float) ( rand(RAND_MAX) / (RAND_MAX + 1.0) );
+		int ret = 0;
+		while(my_rand < 0.5){
+			 my_rand = (float) ( rand(RAND_MAX) / (RAND_MAX + 1.0) );
+  			ret ++;
+  		} 
+		bit_position = ret;
+		bit_string_copy[bit_position] = 1;
+		i.bit_string = bit_string_copy;
+		i.bit_string_prev = bit_string_copy;
+		i.bit_mask = bit_string_copy; 
+		
+		//Uncomment the following and comment the above bit generation part if bitmasks are set from Powergraph
+		
+		//i.bit_string = i.bit_mask;
+		//i.bit_string_prev = i.bit_mask;
+		
 	}
-	
-	int cnt = 0;
 	
 	// calculating bitstring for each node for each hop
 	
 	while(h < maxIter){
 		int changed = 0;
-		//cnt += 1;
 		for(i : G.nodes) {
-		
-			vect<int>[log_n] bit_string_prev_copy = i.bit_string_prev;
-			vect<int>[log_n] bit_string_copy = i.bit_string;
-			
+			vect<int>[len] bit_string_prev_copy = i.bit_string_prev;
+			vect<int>[len] bit_string_copy = i.bit_string;
 			for( nbr : i.nbrs )
 			{
-				vect<int>[log_n] nbr_bit_string_prev_copy = nbr.bit_string_prev;
+				vect<int>[len] nbr_bit_string_prev_copy = nbr.bit_string_prev;
 				int index = 0;
-				
-				while( index < log_n)
+				while( index < len)
 				{
 					bool x = (bit_string_prev_copy[index] == 1) || (nbr_bit_string_prev_copy[index] == 1);
 					if(x) {
-						
 						bit_string_copy[index] = 1;
 						}
 					else {
 						bit_string_copy[index] = 0;	
 					}
-					
 					index += 1;
 				}
 			}
-			
 			if(bit_string_copy != bit_string_prev_copy )
 			{
 				changed += 1;	
-				
 			}
-			
-			i.bit_string_prev = bit_string_copy;
 			i.bit_string = bit_string_copy;
+		}
+		
+		foreach(i : G.nodes){
+			i.bit_string_prev = i.bit_string;
 		}
 		
 		//calculating neighbourhood function
 		
+		float current_count = 0;
 		foreach( i : G.nodes){
-			int index = 0;
+			int index = len - 1;
 			double leftmost_zero_bit = 0 ;
-			vect<int>[log_n] bit_string_copy = i.bit_string;
-			while( index < log_n )
+			vect<int>[len] bit_string_copy = i.bit_string;
+			while( index >= 0 )
 			{
 				//find the leftmost 0 bit
-				if( bit_string_copy[index] == 0 )
+				if( bit_string_copy[index] == 1 )
 				{
-					leftmost_zero_bit = index;
-					index = log_n + 1;  
+					leftmost_zero_bit = index + 1;
+					index = -1;  
 				}
-					
-				index +=1;	
+				index = index - 1;	
 			}
-			
-			vect<int>[maxIter] neighbourhood_copy = i.neighbourhood;
-			neighbourhood_copy[h] =  1.29280811 * pow(2.0 , leftmost_zero_bit);
-			total_neighbourhood[h] += neighbourhood_copy[h];
+			vect<double>[maxIter] neighbourhood_copy = i.neighbourhood;
+			neighbourhood_copy[h] = pow(2.0 , leftmost_zero_bit) / 0.77351;
+			total_neighbourhood[h] = total_neighbourhood[h]+ neighbourhood_copy[h];
 			i.neighbourhood = neighbourhood_copy;
 		}
+		
+		//stop iterating if the bitmasks are not changing
 		
 		if (changed == 0 ){
 			h_max = h;
@@ -97,37 +101,26 @@ procedure approximate_diameter(G:graph, log_n : int, maxIter : int, K : int ; bi
 	
 	for( i : G.nodes){
 		h = 0;
-		vect<int>[maxIter] neighbourhood_copy = i.neighbourhood;
+		vect<double>[maxIter] neighbourhood_copy = i.neighbourhood;
 		while(h < maxIter){
-		
-			if(neighbourhood_copy[h] >= 0.9 * neighbourhood_copy[h_max]){
-				//cnt = neighbourhood_copy[h];
+				if(neighbourhood_copy[h] >= 0.9 * neighbourhood_copy[h_max]){
 				i.radius = h;
 				h = maxIter +1;
-			
 			}
 			h += 1;
-				
 		}
 	}
-	
 	h = 0;
-	
+
 	//calculating approximate diameter of the graph
 	
 	while(h < maxIter){
-		
-			if(total_neighbourhood[h] >= 0.9 * total_neighbourhood[h_max]){
-				approximate_diameter = h;
-				h = maxIter +1;
-			
-			}
-				
-			h += 1;
+		if(total_neighbourhood[h_max] < total_neighbourhood[h] * (1.0 + termination_criteria))
+		{
+			approximate_diameter = h;
+			h = maxIter +1;
+		}
+		h += 1;
 	}
-	
-	//return approximate_diameter + 1;
-	return h_max;
-	//return cnt;
-	
+	return approximate_diameter + 1 ; //since it is 0 indexed 
 }
