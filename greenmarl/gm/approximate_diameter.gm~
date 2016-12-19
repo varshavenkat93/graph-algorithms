@@ -9,12 +9,8 @@ procedure approximate_diameter(G:graph, len : int, maxIter : int, K : int ; bit_
 	float my_rand = 0;
 	int RAND_MAX = 32767;
 	float termination_criteria = 0.0001;
-	
 	foreach(i : G.nodes) {
-		
-		
 		vect<int>[len] bit_string_copy = 0;
-	
 		my_rand = (float) ( rand(RAND_MAX) / (RAND_MAX + 1.0) );
 		int ret = 0;
 		while(my_rand < 0.5){
@@ -23,8 +19,6 @@ procedure approximate_diameter(G:graph, len : int, maxIter : int, K : int ; bit_
   		} 
 		bit_position = ret;
 		bit_string_copy[bit_position] = 1;
-		
-		
 		i.bit_string = bit_string_copy;
 		i.bit_string_prev = bit_string_copy;
 		i.bit_mask = bit_string_copy; 
@@ -36,45 +30,33 @@ procedure approximate_diameter(G:graph, len : int, maxIter : int, K : int ; bit_
 		
 	}
 	
-	int cnt = 0;
-	
-	
 	// calculating bitstring for each node for each hop
 	
 	while(h < maxIter){
 		int changed = 0;
-		
 		for(i : G.nodes) {
-		
 			vect<int>[len] bit_string_prev_copy = i.bit_string_prev;
 			vect<int>[len] bit_string_copy = i.bit_string;
-			
 			for( nbr : i.nbrs )
 			{
 				vect<int>[len] nbr_bit_string_prev_copy = nbr.bit_string_prev;
 				int index = 0;
-				
 				while( index < len)
 				{
 					bool x = (bit_string_prev_copy[index] == 1) || (nbr_bit_string_prev_copy[index] == 1);
 					if(x) {
-						
 						bit_string_copy[index] = 1;
 						}
 					else {
 						bit_string_copy[index] = 0;	
 					}
-					
 					index += 1;
 				}
 			}
-			
 			if(bit_string_copy != bit_string_prev_copy )
 			{
 				changed += 1;	
-				
 			}
-			
 			i.bit_string = bit_string_copy;
 		}
 		
@@ -97,12 +79,8 @@ procedure approximate_diameter(G:graph, len : int, maxIter : int, K : int ; bit_
 					leftmost_zero_bit = index + 1;
 					index = -1;  
 				}
-					
 				index = index - 1;	
 			}
-			
-			
-			
 			vect<double>[maxIter] neighbourhood_copy = i.neighbourhood;
 			neighbourhood_copy[h] = pow(2.0 , leftmost_zero_bit) / 0.77351;
 			total_neighbourhood[h] = total_neighbourhood[h]+ neighbourhood_copy[h];

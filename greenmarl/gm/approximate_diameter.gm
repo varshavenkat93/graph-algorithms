@@ -83,7 +83,8 @@ procedure approximate_diameter(G:graph, len : int, maxIter : int, K : int ; bit_
 			}
 			vect<double>[maxIter] neighbourhood_copy = i.neighbourhood;
 			neighbourhood_copy[h] = pow(2.0 , leftmost_zero_bit) / 0.77351;
-			total_neighbourhood[h] = total_neighbourhood[h]+ neighbourhood_copy[h];
+			total_neighbourhood[h] = total_neighbourhood[h]+ neighbourhood_copy[h]; // Bug - if total_neighbourhood[h] 
++= neighbourhood_copy[h] is used instead.
 			i.neighbourhood = neighbourhood_copy;
 		}
 		
